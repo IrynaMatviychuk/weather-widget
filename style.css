@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+
+.container {
+  background: radial-gradient(circle, rgb(46, 199, 113) 23%, rgba(112, 201, 149, 0.7487195512) 76%);
+  box-shadow: 10px 5px 5px rgba(38, 136, 87, 0.587);
+  width: 550px;
+  height: 380px;
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 250px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .city {
+  font-size: 30px;
+  line-height: 15px;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+}
+.container .main-weather-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main-weather-indicators .icon-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+.container .main-weather-indicators .icon-temperature .icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+.container .main-weather-indicators .icon-temperature .temperature {
+  display: flex;
+}
+.container .main-weather-indicators .icon-temperature .temperature .temperature-value,
+.container .main-weather-indicators .icon-temperature .temperature .temperature-units {
+  font-size: 25px;
+  line-height: 15px;
+  font-weight: bold;
+}
+.container .main-weather-indicators .weather-type {
+  margin-bottom: 13px;
+  font-size: 15px;
+  line-height: 14px;
+}
+.container .additional-weather-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.container .additional-weather-indicators .weather-indicator {
+  width: 25%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .additional-weather-indicators .weather-indicator .name-weather-indicator {
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+.container .additional-weather-indicators .weather-indicator .value-weather-indicator {
+  display: flex;
+  justify-content: center;
+}
+.container .additional-weather-indicators .weather-indicator .value-weather-indicator div[class*=-value],
+.container .additional-weather-indicators .weather-indicator .value-weather-indicator .units {
+  font-size: 13px;
+  margin-top: 8px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-widget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div><h1 class="city"></h1></div>
+      <div class="main-weather-indicators">
+        <div class="icon-temperature">
+          <img class="icon" src="" alt="" />
+          <div class="temperature">
+            <div class="temperature-value"></div>
+            <div class="temperature-units">°C</div>
+          </div>
+        </div>
+        <div class="weather-type"></div>
+      </div>
+
+      <div class="additional-weather-indicators">
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Fils like</div>
+          <div class="value-weather-indicator">
+            <div class="temperature-fils-like-value"></div>
+            <div class="units">°C</div>
+          </div>
+        </div>
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Min temperature</div>
+          <div class="value-weather-indicator">
+            <div class="temperature-min-value"></div>
+            <div class="units">°C</div>
+          </div>
+        </div>
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Max temperature</div>
+          <div class="value-weather-indicator">
+            <div class="temperature-max-value"></div>
+            <div class="units">°C</div>
+          </div>
+        </div>
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Wind</div>
+          <div class="value-weather-indicator">
+            <div class="wind-value"></div>
+            <div class="units">m/s</div>
+          </div>
+        </div>
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Pressure</div>
+          <div class="value-weather-indicator">
+            <div class="pressure-value"></div>
+            <div class="units">hPa</div>
+          </div>
+        </div>
+        <div class="weather-indicator">
+          <div class="name-weather-indicator">Humidity</div>
+          <div class="value-weather-indicator">
+            <div class="humidity-value"></div>
+            <div class="units">%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
